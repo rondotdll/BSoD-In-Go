@@ -5,7 +5,8 @@
 > Reference this repo for when you feel like killing a PC (**no admin required!**)
 ---
 
-There isn't really anything that special going on here, we're adjusting our application's system privelege (level of importance) and invoking a system level hard-stop exception which tricks Windows into thinking something vital has broken, causing an immediate blue screen (basically we walk into the club pretending to be a celebrity and fake our death for views on YouTube)
+There isn't really anything that special going on here, we're adjusting our application's system privelege (level of importance) and invoking a system level hard-stop exception which tricks Windows into thinking something vital has broken, causing an immediate blue screen. 
+(basically we walk into the club pretending to be a celebrity and fake our death for views on YouTube)
   
 If you want to change the stop code just edit `0xdeadbeef` on line 17 to whatever [8-digit hexadecimal](https://en.wikipedia.org/wiki/Hexspeak) you want.
 
