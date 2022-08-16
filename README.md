@@ -9,6 +9,27 @@ There isn't really anything that special going on here, we're adjusting our appl
   
 If you want to change the stop code just edit `0xdeadbeef` on line 17 to whatever [8-digit hexadecimal](https://en.wikipedia.org/wiki/Hexspeak) you want.
 
+```go
+package main
+
+import (
+    "syscall"
+    "unsafe"
+)
+
+var (
+    ntdll = syscall.NewLazyDLL("ntdll.dll")
+
+    RtlAdjustPrivilege = ntdll.NewProc("RtlAdjustPrivilege")
+    NtRaiseHardError   = ntdll.NewProc("NtRaiseHardError")
+)
+
+func main() {
+    RtlAdjustPrivilege.Call(19, 1, 0, uintptr(unsafe.Pointer(new(bool))))
+    NtRaiseHardError.Call(0xdeadbeef, 0, 0, uintptr(0), 6, uintptr(unsafe.Pointer(new(uintptr))))
+}
+```
+
 ---
 
 For Windows Only <sub>(duh)</sub>
