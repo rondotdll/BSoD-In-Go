@@ -1,6 +1,6 @@
 ## Invoke a BSoD In Go Lang
 
-### Based off of [peewpw](https://github.com/peewpw/Invoke-BSOD)'s C# implementation of Windows' Native API Hard Stop abuse.
+### Based off of [peewpw](https://github.com/peewpw/Invoke-BSOD)'s C# implementation of Windows' New-Technology API Hard Stop abuse.
 
 > Reference this repo for when you feel like killing a PC (**no admin required!**)
 ---
