@@ -5,7 +5,7 @@
 > Reference this repo for when you feel like killing a PC (**no admin required!**)
 ---
 
-There isn't really anything that special going on here, we're adjusting our application's system privelege (level of importance) and invoking a system level hard-stop exception which tricks Windows into thinking something vital has broken, causing an immediate blue screen. 
+There isn't really anything that special going on here, we're adjusting our application's system privilege (level of importance) and invoking a system level hard-stop exception which tricks Windows into thinking something vital has broken, causing an immediate blue screen. 
 
 > (basically we walk into the club pretending to be a celebrity and fake our death for views on YouTube)
   
